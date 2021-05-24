@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Title</title>
+    <title>Animal Crossing</title>
   </head>
-  <body>
+  <body style="background-image: url(./assets/img/background.jpg);">
 
     <!--Navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">Animal Crossing</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,16 +25,19 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Texto</a>
+              <a class="nav-link" href="#texto">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vídeo</a>
+              <a class="nav-link" href="#video">Trailer</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Inscrição</a>
+                <a class="nav-link" href="#form">Newsletter</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#cards">Novidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sobre">Rede Sociais</a>
             </li>
           </ul>
         </div>
@@ -47,29 +50,26 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="./assets/img/imagem1.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Title</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat alias magnam earum repellendus ipsam nobis, odit autem error et exercitationem nulla veniam est iusto obcaecati possimus nemo dicta molestiae doloribus!</p>
-            </div>
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="./assets/img/imagem2.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Title</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat alias magnam earum repellendus ipsam nobis, odit autem error et exercitationem nulla veniam est iusto obcaecati possimus nemo dicta molestiae doloribus!</p>
-            </div>
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="./assets/img/imagem3.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Title</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat alias magnam earum repellendus ipsam nobis, odit autem error et exercitationem nulla veniam est iusto obcaecati possimus nemo dicta molestiae doloribus!</p>
-            </div>
           </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/imagem4.jpg" alt="Fourth slide">
+          </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,31 +84,141 @@
 
     <!--Container-->
       <div class="container">
-          <div class="row mt-5 mb-5">
+
+          <!--Texto e Imagem-->
+          <div class="row mt-5 mb-5 border border-white rounded" id="texto" style="background-color: rgba(255, 255, 255, 0.452);">
               <div class="col-md-6 text-center align-self-center">
-                <h2>Title</h2>
+                <h2>Comunidade Online de Fãs!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veniam neque! Autem, nulla. Obcaecati vero iure et voluptate, voluptas accusamus tempore culpa quidem, minima quaerat aliquid ad facere ducimus assumenda.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ut fugiat commodi nam repellendus animi facilis atque sequi sit qui. Sapiente culpa, quam voluptas exercitationem fugit reprehenderit alias eaque tempore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus cumque magni debitis? Neque tempora obcaecati similique aspernatur quia dolores eos vero nemo odio rerum perferendis possimus, officiis accusantium voluptates?</p>
               </div>
-              <div class="col-md-6">
-                <img class="mw-100" src="./assets/img/Startup life.gif" alt="imagem teste" >
+              <div class="col-md-6 text-center">
+                <img class="" style="width: 326px; height: 556px;" src="./assets/img/isabelle.png" alt="Personagem Isabelle" >
               </div>
           </div>
-          <div class="row mb-5">
+          <!--/Texto e Imagem-->
+
+          <!--Vídeo-->
+          <div class="row mb-5" id="video">
               <div class="col-md-6 mx-auto">
-                  <h2 class="text-center">Title</h2>
+                  <h2 class="text-center">Trailer Oficial do Jogo</h2>
                 <!-- Proporção 16:9 -->
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7KXGZAEWzn0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_3YNL0OWio0" allowfullscreen></iframe>
                 </div>
               </div>
 
           </div>
-      </div>
+          <!--/Vídeo-->
 
+          <!--Formulário-->
+          <div class="row mb-5 border border-white rounded" id="form" style="background-color: rgba(255, 255, 255, 0.452);">
+            <div class="col-md-6 align-self-center">
+              <h2 class="text-center">Assine nossa newsletter!</h2>
+              <p class="text-center">
+                Preencha o formulário abaixo e receba nossa newsletter semanal
+              </p>
+              <form>
+
+                <div class="form-group">
+                  <label for="nome">Primeiro nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
+                  <div id="txtNome">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="sobrenome">Sobrenome</label>
+                  <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" onkeyup="validaSobrenome()">
+                  <div id="txtSobrenome">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Endereço de email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Seu email" onkeyup="validaEmail()">
+                  <div id="txtEmail"></div>
+                </div>
+
+                <button class="btn btn-warning" type="submit" onclick="enviar()">Enviar</button>
+
+              </form>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <img class="" style="width: 266px; height: 456px;" src="./assets/img/tomnook.png" alt="Personagem Tom Nook" >
+            </div>
+
+          </div>
+          <!--/Formulário-->
+
+          <!--Cards-->
+          <div class="row mb-5" id="cards">
+
+
+            <div class="col-md-3 m-auto">
+              <div class="card text-center bg-light border-light" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/img/nintendo-logo.jpg" alt="Logo da Nintendo">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Site Oficial</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellendus eligendi veniam ducimus incidunt eaque commodi alias maxime rerum. Reiciendis veritatis esse vel repellat qui saepe nobis veniam soluta cum.</p>
+                  <a href="https://animal-crossing.com/" target="_blank" class="btn btn-warning">Visitar</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 m-auto">
+              <div class="card text-center bg-light border-light" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/img/fandom-logo.jpeg" alt="Logo do Fandom">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Wiki dos Fãs</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellendus eligendi veniam ducimus incidunt eaque commodi alias maxime rerum. Reiciendis veritatis esse vel repellat qui saepe nobis veniam soluta cum.</p>
+                  <a href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki" target="_blank"  class="btn btn-warning">Visitar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 m-auto">
+              <div class="card text-center bg-light border-light" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/img/card3.png" alt="Logo do Animal Crossing ">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">História do Jogo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellendus eligendi veniam ducimus incidunt eaque commodi alias maxime rerum. Reiciendis veritatis esse vel repellat qui saepe nobis veniam soluta cum.</p>
+                  <a href="https://en.wikipedia.org/wiki/Animal_Crossing" target="_blank" class="btn btn-warning">Visitar</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/Cards-->
+
+          <!--Footer-->
+          <hr>
+          <div class="row" id="sobre">
+            <div class="col-md-6 mx-auto text-center">
+
+              <a href="https://github.com/jullyanedemetrio" target="_blank">
+                <img src="./assets/img/github.png" alt="Logo do GitHub" style="width: 40px; height: 40px;">
+              </a>
+
+              <a href="https://www.linkedin.com/in/jullyane-demetrio-de-souza-60407220b/" target="_blank">
+                <img src="./assets/img/linkedin.png" alt="Logo do LinkedIn" style="width: 40px; height: 40px;" >
+              </a>
+              <p>
+                Todos os direitos reservados: Jullyane Demetrio &copy
+              </p>
+
+            </div>
+          </div>
+
+          <!--/Footer-->
+
+      </div>
     <!--/Container-->
     
-
+    <script src="./assets/js/script.js"></script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
